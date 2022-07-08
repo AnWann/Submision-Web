@@ -1,0 +1,698 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Tapestry&display=swap");
+
+:root {
+  --main-color: #ec994b;
+  --second-color: #222224;
+
+  --main-font: "Montserrat", sans-serif;
+  --logo-font: "Tapestry", cursive;
+}
+
+body {
+  background-color: #fafafa;
+  font-family: var(--main-font);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+.container {
+  max-width: 1500px;
+}
+
+/* NavBar */
+header {
+  position: relative;
+}
+.navbar .nav-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  padding: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #fafafa;
+}
+.nav-wrapper .logo {
+  font-family: var(--logo-font);
+  font-size: 2.8rem;
+  color: var(--main-color);
+}
+.nav-wrapper .menu-wrapper {
+  display: flex;
+}
+
+.nav-wrapper .menu-wrapper .menu {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.menu-wrapper .menu .menu-link {
+  font-size: 1rem;
+  color: var(--second-color);
+  font-family: var(--main-font);
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+.menu-wrapper .menu .menu-link.active {
+  font-weight: 600;
+  color: var(--main-color);
+}
+
+.menu-wrapper .menu .menu-link:hover {
+  color: var(--main-color);
+  font-weight: 700;
+}
+
+button {
+  background-color: #fafafa;
+  border: none;
+}
+.nav-wrapper .menu-toggle {
+  display: none;
+  font-size: 30px;
+}
+/* Home */
+.home {
+  margin-top: 150px;
+}
+
+.home .home-wrapper {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+
+.home-wrapper .heading {
+  font-size: 3.8rem;
+  font-family: var(--main-font);
+  font-weight: 700;
+  color: var(--second-color);
+}
+.home-wrapper .subheading {
+  font-size: 1.25rem;
+  color: #797979;
+  font-weight: 500;
+  font-family: var(--main-font);
+  margin: 25px 0;
+  max-width: 500px;
+  line-height: 30px;
+}
+
+.content-left .btn-order {
+  background-color: var(--main-color);
+  border-radius: 40px;
+  width: 200px;
+  padding: 16px 30px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.content-left .btn-order a {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+}
+
+.content-left .btn-order:hover {
+  background-color: #fd800a;
+}
+
+.content-right .hero-image {
+  max-width: 800px;
+}
+.content-right .hero-image img {
+  width: 85%;
+  margin-left: 93px;
+}
+.home-wrapper .content-left {
+  flex: 0 0 50%;
+}
+.home-wrapper .content-right {
+  flex: 0 0 50%;
+}
+
+/* Home End */
+
+/* Service */
+.main .main-section {
+  margin: auto;
+  margin-top: 100px;
+  padding: 30px;
+}
+
+.main-section .row1 {
+  text-align: center;
+}
+
+.main-section .service-top {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 17px;
+  color: var(--main-color);
+}
+
+.main-section .service-sub {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--second-color);
+  margin-top: 10px;
+}
+
+.main-section .row2 {
+  font-family: var(--main-font);
+  color: var(--second-color);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.row2 .menu-layanan {
+  max-width: 300px;
+  text-align: center;
+  padding: 30px;
+}
+
+.menu-layanan h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.menu-layanan p {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.row2 .menu-layanan img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* Service End */
+
+/* Menu Start */
+.content-menu .content-section {
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.content-section .row1 {
+  text-align: center;
+}
+.content-section .menu-judul {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--second-color);
+  margin-top: 10px;
+}
+
+.content-section .row2 {
+  font-family: var(--main-font);
+  color: var(--second-color);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.row2 .menu-makanan {
+  max-width: 300px;
+  text-align: center;
+  padding: 30px;
+}
+
+.menu-makanan h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.row2 .menu-makanan img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* Menu End */
+
+/* Bayar Start */
+.content-bayar .bayar-section {
+  margin: auto;
+  margin-top: 50px;
+  padding: 30px;
+}
+
+.bayar-section .row1 {
+  text-align: center;
+}
+.bayar-section .bayar-judul {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--second-color);
+  margin-top: 40px;
+}
+
+.bayar-section .row2 {
+  font-family: var(--main-font);
+  color: var(--second-color);
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 225px;
+}
+
+.row2 .bayar-logo {
+  max-width: 900px;
+  text-align: center;
+  padding: 30px;
+}
+
+.bayar-logo h3 {
+  margin-top: 10px;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.row2 .bayar-logo img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+/* Bayar End */
+
+/* Contact Start */
+
+article .contact-form {
+  margin: auto;
+  width: 80%;
+  height: 700px;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+.contact-form .form {
+  background-color: #fff;
+  width: 85%;
+  height: 570px;
+  text-align: center;
+  margin: auto;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(78, 74, 74, 0.2);
+  margin-bottom: 30px;
+}
+
+.form h2.kontak {
+  margin: 20px auto;
+  font-weight: 700;
+  color: #fff;
+  padding: 5px;
+}
+
+.form .border {
+  width: 120px;
+  height: 4px;
+  background: var(--main-color);
+  margin: 10px auto;
+}
+
+.contact .kontak {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: var(--second-color);
+  margin-top: 40px;
+  width: 50%;
+  background-color: var(--main-color);
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-form input {
+  padding: 10px 0;
+  margin-bottom: 30px;
+}
+
+.contact-form textarea {
+  height: 80px;
+  padding: 10px 0;
+  margin-bottom: 40px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  margin-top: 30px;
+  width: 70%;
+  box-sizing: border-box;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  border-bottom: 2px solid #999;
+}
+
+button.btn-send {
+  width: 20%;
+  padding: 10px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  text-transform: uppercase;
+  background-color: var(--main-color);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 0;
+  border-radius: 3px;
+  transition: 0.2s ease;
+}
+button.btn-send:hover {
+  background-color: #fd800a;
+}
+
+/* Contact End */
+
+/* Biodata Start */
+
+aside .biodata {
+  background-color: #fff;
+  margin: auto;
+  width: 30%;
+  height: 520px;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(78, 74, 74, 0.2);
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.profil .border2 {
+  width: 55px;
+  height: 2px;
+  background: var(--main-color);
+  margin: 6px auto;
+  margin-bottom: 30px;
+}
+.profil h2 {
+  font-family: var(--main-font);
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+
+.profil .foto {
+  width: 150px;
+  margin: auto;
+}
+
+.foto img {
+  width: 100%;
+  border: 1px solid rgba(78, 74, 74, 0.2);
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profil .nama,
+.profil .alamat,
+.profil .email,
+.profil .follow {
+  margin-bottom: 10px;
+  font-family: var(--main-font);
+}
+
+.profil .nama h5,
+.profil .alamat h5,
+.profil .email h5,
+.profil .follow h5 {
+  font-weight: 700;
+  color: var(--main-color);
+}
+
+.profil .follow h5 {
+  font-size: 15px;
+}
+.follow .medsos {
+  margin-top: 40px;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.follow .medsos li {
+  margin-right: 10px;
+}
+
+.follow ul li a .bxl-facebook-square {
+  color: #3ab0ff;
+}
+.follow ul li a .bxl-instagram-alt {
+  color: #c32aa3;
+}
+
+/* Biodata End */
+
+/* Footer */
+footer {
+  background-color: #fafafa;
+}
+
+footer p {
+  font-size: 15px;
+  font-family: var(--main-font);
+  font-weight: 600;
+  color: #797979;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+/* Responsives */
+
+/* 1024px Up */
+@media screen and (max-width: 1024px) {
+  /* navbar */
+  .nav-wrapper .logo {
+    font-size: 2.1rem;
+  }
+  .nav-wrapper .menu-wrapper .menu {
+    gap: 25px;
+  }
+  .menu-wrapper .menu .menu-link {
+    font-size: 0.9rem;
+  }
+  /* End */
+  /* Home */
+  .home-wrapper .heading {
+    font-size: 2.5rem;
+  }
+  .home-wrapper .subheading {
+    font-size: 1.1rem;
+  }
+  .content-left .btn-order {
+    width: 170px;
+    padding: 14px 30px;
+  }
+  .content-left .btn-order a {
+    font-size: 13px;
+  }
+  .content-right .hero-image img {
+    width: 80%;
+  }
+  /* End */
+  /* Layanan */
+  .row2 .menu-layanan {
+    max-width: 220px;
+  }
+  .menu-layanan h3 {
+    font-size: 1rem;
+  }
+  .menu-layanan p {
+    font-size: 12px;
+  }
+  /* End */
+  /* Menu */
+  .row2 .menu-makanan {
+    max-width: 220px;
+  }
+  .menu-makanan h3 {
+    font-size: 1rem;
+  }
+  aside .biodata {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 840px) {
+  /* Layanan */
+  .row1 .service-sub {
+    font-size: 1.7rem;
+  }
+  .row2 .menu-layanan {
+    max-width: 180px;
+  }
+  .menu-layanan h3 {
+    font-size: 0.8rem;
+  }
+  .menu-layanan p {
+    font-size: 10px;
+  }
+
+  /* Menu */
+  .row1 .menu-judul {
+    font-size: 1.7rem;
+  }
+  .row2 .menu-makanan {
+    max-width: 180px;
+  }
+  .menu-makanan h3 {
+    font-size: 0.8rem;
+  }
+
+  /* Bayar */
+  .row1 .bayar-judul {
+    font-size: 1.7rem;
+  }
+
+  /* Kontak */
+  .contact .kontak {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 679px) {
+  .nav-wrapper .menu-toggle {
+    display: initial;
+    font-size: 2.5rem;
+    color: var(--main-color);
+    transition: 0.5s;
+  }
+
+  .nav-wrapper .menu-wrapper {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    display: block;
+    text-align: center;
+    padding-bottom: 3rem;
+    border-radius: 10px;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    transition: 0.5s ease-in-out;
+    background-color: #fff;
+  }
+  .nav-wrapper .menu-wrapper.active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    transition: 0.5s ease-in-out;
+  }
+  .nav-wrapper .menu-wrapper .menu {
+    display: block;
+  }
+  .menu-wrapper .menu .menu-item {
+    margin: 30px 0;
+  }
+  .menu .menu-item .menu-link {
+    color: var(--second-color);
+  }
+}
+
+@media (max-width: 450px) {
+  .home .home-wrapper {
+    display: block;
+    text-align: center;
+  }
+  .home-wrapper .heading {
+    font-size: 1.8rem;
+  }
+  .home-wrapper .subheading {
+    font-size: 0.8rem;
+    line-height: 20px;
+  }
+  .content-left .btn-order {
+    border-radius: 30px;
+    width: 150px;
+    padding: 12px 20px;
+    margin: auto;
+  }
+  .content-left .btn-order a {
+    font-size: 12px;
+  }
+  .content-right .hero-image {
+    max-width: 250px;
+    margin: auto;
+  }
+  .content-right .hero-image img {
+    width: 100%;
+    margin: 20px auto;
+  }
+  .home-wrapper .content-left {
+    flex: 0 0 100%;
+  }
+
+  .row1 .service-top {
+    font-size: 13px;
+  }
+  .row1 .service-sub {
+    font-size: 1.3rem;
+  }
+  .main-section .row2 {
+    gap: 15px;
+  }
+  .menu-layanan h3 {
+    font-size: 0.8rem;
+  }
+
+  .row1 .menu-judul {
+    font-size: 1.3rem;
+  }
+  .content-section .row2 {
+    gap: 15px;
+  }
+
+  .row1 .bayar-judul {
+    font-size: 1.3rem;
+  }
+
+  article .contact-form {
+    width: 100%;
+    padding: 20px;
+  }
+  .contact-form .form {
+    width: 95%;
+  }
+  .contact .kontak {
+    font-size: 1.3rem;
+    width: 70%;
+  }
+  aside .biodata {
+    background-color: #fff;
+    margin: auto;
+    width: 90%;
+    height: 520px;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(78, 74, 74, 0.2);
+    margin-bottom: 50px;
+    text-align: center;
+  }
+}
